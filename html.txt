@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Service Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Service Assessment</h1>
+    </header>
+    
+    <main>
+        <form id="assessmentForm">
+            <div class="form-group">
+                <label for="hotelName">Hotel Name:</label>
+                <input type="text" id="hotelName" name="hotelName" required>
+            </div>
+            <div class="form-group">
+                <label for="cleanliness">Cleanliness:</label>
+                <input type="range" id="cleanliness" name="cleanliness" min="1" max="5" value="3">
+            </div>
+            <div class="form-group">
+                <label for="service">Service:</label>
+                <input type="range" id="service" name="service" min="1" max="5" value="3">
+            </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="range" id="location" name="location" min="1" max="5" value="3">
+            </div>
+            <div class="form-group">
+                <label for="valueForMoney">Value for Money:</label>
+                <input type="range" id="valueForMoney" name="valueForMoney" min="1" max="5" value="3">
+            </div>
+            <div class="form-group">
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+            </div>
+            <button type="submit">Submit Assessment</button>
+        </form>
+        <div id="result"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

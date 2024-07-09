@@ -1,0 +1,23 @@
+document.getElementById('assessmentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const hotelName = document.getElementById('hotelName').value;
+    const cleanliness = document.getElementById('cleanliness').value;
+    const service = document.getElementById('service').value;
+    const location = document.getElementById('location').value;
+    const valueForMoney = document.getElementById('valueForMoney').value;
+    const comments = document.getElementById('comments').value;
+    
+    const resultDiv = document.getElementById('result');
+    resultDiv.innerHTML = `
+        <h2>Assessment Result</h2>
+        <p><strong>Hotel Name:</strong> ${hotelName}</p>
+        <p><strong>Cleanliness:</strong> ${cleanliness}</p>
+        <p><strong>Service:</strong> ${service}</p>
+        <p><strong>Location:</strong> ${location}</p>
+        <p><strong>Value for Money:</strong> ${valueForMoney}</p>
+        <p><strong>Comments:</strong> ${comments}</p>
+    `;
+    
+    this.reset();
+});
